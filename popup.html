@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+	<div>
+		<form>
+			<script>
+				function get_params(){
+					localStorage["intuit_time"] = document.getElementById("time").value;
+					localStorage["intuit_rating"] = document.getElementById("rating").value;
+					localStorage["intuit_percent"] = document.getElementById("percent").value;
+					localStorage["intuit_attempts"] = document.getElementById("attempts").value;
+					localStorage["intuit_wrong"] = document.getElementById("wrong").value;
+				}
+			</script>
+			<p>Время задержки: <input id="time" type="text"/></p>
+			<p>Оценка: <input id="rating" type="text"/></p>
+			<p>Процент выполнения: <input id="percent" type="text"/></p>
+			<p>Попыток: <input id="attempts" type="text"/></p>
+			<p>Ошибок: <input id="wrong" type="text"/></p>
+			<input type="submit" onclick=" get_params();" />
+		</form>
+	</div>
+</body>
+</html>
